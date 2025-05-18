@@ -11,12 +11,7 @@ dashboard_menus = {
 
 company_list_all = [
     "Company Name",
-    "Member1",
-    "Member2",
-    "Member3",
-    "Member4",
-    "Member5",
-    "Member6",
+    "Team",
     "Grade",
     "Division",
     "Check",
