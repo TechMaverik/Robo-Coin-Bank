@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ROBOCOIN BANK 2025</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <img src="static/RoboCoin.png" alt="Robocoin_Bank"  class="img-thumbnail" />
+      <ul class="nav nav-pills nav-stacked">
+        {% for key in dashboard %}
+        <li ><a href="{{dashboard[key]}}">{{key}}</a></li>
+        {% endfor %}
+      </ul><br>      
+    </div>
+    <div class="col-sm-9">
+      <h4><small>ROBOCOIN BANKER 2025, AI AND ROBOTICS LAB DPS INDHIRAPURAM</small></h4>
+      <hr>
+      <br>
+      
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="name" aria-describedby="name" placeholder="CEO Name">            
+            </div> 
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Search</button>     
+            </div>            
+        </form>
+    </form>
+    <table class="table">
+      <thead>
+          <tr>
+            {% for table in company_list_transaction_list%}
+            <th scope="col">{{table}}</th>
+            {%endfor%}
+          </tr>
+        </thead>
+        <!-- {% for data in expenses%} -->
+        <tbody>
+          
+          <tr>
+            <!-- <td style="color: red;">{{data[4]}}</td>
+            <td style="color: red;">{{data[2]}}</td>
+            <td style="color: red;">{{data[7]}}</td>
+            <td style="color: red;">{{data[1]}}</td>
+            <td style="color: red;">{{data[3]}}</td> -->
+          </tr>
+  
+        </tbody>
+        <!-- {%endfor%} -->
+    </table>
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="id" aria-describedby="name" placeholder="Company ID">            
+            </div> 
+            <div class="form-group">
+                <input type="text" class="form-control" name="coins" aria-describedby="name" placeholder="Award Coins">            
+            </div> 
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Award</button>     
+            </div>            
+        </form>
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="id" aria-describedby="name" placeholder="Company ID">            
+            </div> 
+            <div class="form-group">
+                <input type="text" class="form-control" name="remark" aria-describedby="name" placeholder="Remarks">            
+            </div> 
+            <div class="form-group">
+                <button type="submit" class="btn btn-danger">Strike</button>     
+            </div>            
+        </form>
+        
+    </div>
+      <br><br>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
