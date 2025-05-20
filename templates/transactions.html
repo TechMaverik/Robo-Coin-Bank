@@ -47,11 +47,11 @@
       </ul><br>      
     </div>
     <div class="col-sm-9">
-      <h4><small>ROBOCOIN BANKER 2025, AI AND ROBOTICS LAB DPS INDHIRAPURAM</small></h4>
+      <h4><small>ROBOCOIN BANKER 2025, AI AND ROBOTICS LAB DPS INDIRAPURAM</small></h4>
       <hr>
       <br>
       
-        <form action="" method="post">
+        <form action="/searchceo" method="post">
             <div class="form-group">
                 <input type="text" class="form-control" name="name" aria-describedby="name" placeholder="CEO Name">            
             </div> 
@@ -68,21 +68,21 @@
             {%endfor%}
           </tr>
         </thead>
-        <!-- {% for data in expenses%} -->
+        {% for data in rows%}
         <tbody>
           
           <tr>
-            <!-- <td style="color: red;">{{data[4]}}</td>
-            <td style="color: red;">{{data[2]}}</td>
-            <td style="color: red;">{{data[7]}}</td>
+            <td style="color: red;">{{data[13]}}</td>
+            <td style="color: red;">{{data[0]}}</td>
             <td style="color: red;">{{data[1]}}</td>
-            <td style="color: red;">{{data[3]}}</td> -->
+            <td style="color: red;">{{data[10]}}</td>
+            
           </tr>
   
         </tbody>
-        <!-- {%endfor%} -->
+        {%endfor%}
     </table>
-        <form action="" method="post">
+        <form action="/updatebalance" method="post">
             <div class="form-group">
                 <input type="text" class="form-control" name="id" aria-describedby="name" placeholder="Company ID">            
             </div> 
@@ -93,12 +93,12 @@
                 <button type="submit" class="btn btn-success">Award</button>     
             </div>            
         </form>
-        <form action="" method="post">
+        <form action="/updatestrikes" method="post">
             <div class="form-group">
                 <input type="text" class="form-control" name="id" aria-describedby="name" placeholder="Company ID">            
             </div> 
             <div class="form-group">
-                <input type="text" class="form-control" name="remark" aria-describedby="name" placeholder="Remarks">            
+                <input type="text" class="form-control" name="remarks" aria-describedby="name" placeholder="Remarks">            
             </div> 
             <div class="form-group">
                 <button type="submit" class="btn btn-danger">Strike</button>     

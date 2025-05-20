@@ -47,11 +47,32 @@
       </ul><br>      
     </div>
     <div class="col-sm-9">
-      <h4><small>ROBOCOIN BANKER 2025, AI AND ROBOTICS LAB DPS INDHIRAPURAM</small></h4>
+      <h4><small>ROBOCOIN BANKER 2025, AI AND ROBOTICS LAB DPS INDIRAPURAM</small></h4>
       <hr>
       <br>
       
-      <marquee><h1><b>🛠️ 🛠️ 🛠️ Under Development 🛠️ 🛠️ 🛠️</b></h1></marquee>
+      <table class="table">
+        <thead>
+            <tr>
+              {% for table in black_listed_companies%}
+              <th scope="col">{{table}}</th>
+              {%endfor%}
+            </tr>
+          </thead>
+          {% for data in blacklisted%}
+          <tbody>
+            
+            <tr>
+              <td style="color: red;">{{data[0]}}</td>
+              <td style="color: red;">{{data[4]}} &nbsp;{{data[5]}} &nbsp;{{data[6]}} &nbsp;{{data[7]}} &nbsp;{{data[8]}} &nbsp;{{data[9]}} &nbsp;</td>
+              <td style="color: red;">{{data[2]}}</td>
+              <td style="color: red;">{{data[3]}}</td>
+              <td style="color: red;">{{data[11]}}</td>
+            </tr>
+    
+          </tbody>
+          {%endfor%}
+      </table>
       
     </div>
       <br><br>

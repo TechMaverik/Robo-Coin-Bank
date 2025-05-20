@@ -3,15 +3,13 @@
 dashboard_menus = {
     "Overview ": "/",
     "Create Company": "/createcompany",
-    "Transactions": "/companybalance",
+    "Transactions": "/transactions",
     "Black Listed Company": "/blacklist",
-    "Privileges": "/privileges",
-    "Settings": "/settings",
 }
 
 company_list_all = [
     "Company Name",
-    "Team",
+    "Members",
     "Grade",
     "Division",
     "Check",
@@ -22,4 +20,12 @@ company_list_transaction = [
     "Company Name",
     "CEO",
     "Balance",
+]
+
+black_listed_companies_table = [
+    "Company Name",
+    "Members",
+    "Grade",
+    "Division",
+    "Strikes",
 ]

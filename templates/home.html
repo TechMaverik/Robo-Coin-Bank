@@ -47,15 +47,15 @@
       </ul><br>      
     </div>
     <div class="col-sm-9">
-      <h4><small>ROBOCOIN BANKER 2025, AI AND ROBOTICS LAB DPS INDHIRAPURAM</small></h4>
+      <h4><small>ROBOCOIN BANKER 2025, AI AND ROBOTICS LAB DPS INDIRAPURAM</small></h4>
       <hr>
       <br>
-      <form action="" method="post">
+      <form action="/sort" method="post">
         <div class="form-group">
-            <input type="text" class="form-control" name="name" aria-describedby="name" placeholder="Grade">            
+            <input type="text" class="form-control" name="grade" aria-describedby="name" placeholder="Grade">            
         </div> 
         <div class="form-group">
-            <input type="text" class="form-control" name="coins" aria-describedby="name" placeholder="Division">            
+            <input type="text" class="form-control" name="division" aria-describedby="name" placeholder="Division">            
         </div> 
         <div class="form-group">
             <button type="submit" class="btn btn-success">View</button>    
@@ -70,19 +70,19 @@
               {%endfor%}
             </tr>
           </thead>
-          <!-- {% for data in expenses%} -->
+          {% for data in company_details%}
           <tbody>
             
             <tr>
-              <!-- <td style="color: red;">{{data[4]}}</td>
-              <td style="color: red;">{{data[2]}}</td>
-              <td style="color: red;">{{data[7]}}</td>
-              <td style="color: red;">{{data[1]}}</td>
-              <td style="color: red;">{{data[3]}}</td> -->
+              <td style="color: purple;">{{data[0]}}</td>
+              <td style="color: purple;">{{data[4]}} &nbsp;{{data[5]}} &nbsp;{{data[6]}} &nbsp;{{data[7]}} &nbsp;{{data[8]}} &nbsp;{{data[9]}} &nbsp;</td>
+              <td style="color: purple;">{{data[2]}}</td>
+              <td style="color: purple;">{{data[3]}}</td>
+              <td><input type="checkbox"/></td>
             </tr>
     
           </tbody>
-          <!-- {%endfor%} -->
+          {%endfor%}
       </table>
       
     </div>
